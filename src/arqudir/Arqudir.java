@@ -55,7 +55,7 @@ public class Arqudir {
         }
         
         //Ejercicio 6
-         System.out.println("Primeiro directorio creado: \n"+f.getAbsolutePath());
+         System.out.println("Primer directorio creado: \n"+f.getAbsolutePath());
          
         //Ejercicio 7
          System.out.println("Primer arquivo: \n Nome: "+f.getName()+"\n Ruta: "+f.getAbsolutePath());
@@ -79,13 +79,13 @@ public class Arqudir {
         
         //Ejercicio 10
             f.delete();
-            System.out.println("Arquivo borrado");
+            System.out.println("Archivo borrado");
             f1.delete();
             System.out.println("Temporal borrado");
             
         //Ejercicio 11
             f2.delete();
-            System.out.println("Arquivo borrado");
+            System.out.println("Archivo borrado");
             
             f4.delete();
             System.out.println("Directorio borrado");
