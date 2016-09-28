@@ -1,0 +1,56 @@
+/*
+Exercicio arqudir: 
+Introducion a arquivos e directorios
+
+Java dispon da clase File (java.io.File) que permite realizar operacions relativas a directorios e arquivos (ou ficheiros).
+
+Realizar un proxecto  chamada arqudir que realize as tarefas especificadas a continuacion . 
+       
+NOTA IMPORTANTE: 
+sempre que non se especifique , todas as tarefas deste exercicio deben desenvolverse utilizando a Clase File , o seu constructor e os seus métodos
+
+
+	 1) crear o directorio 'arquivosdir' na ruta '/home/oracle/NetBeansProjects/arquivos/' sempre e cando dito directorio non exista.
+	    comprobar que a ruta foi creada ou existe mediante o comandos do sistema operativo
+
+ 
+         2) crear  o arquivo Products1.txt no directorio mencionado anteriormente (arquivosdir) sempre e cando dito arquivo non exista. 
+	    comprobar que o arquivo foi creado ou existe mediante comandos do sistema operativo
+
+	 3) comprobar que a ruta foi creada mediante o metodo da clase File axeitado 
+	    comprobar que o arquivo foi creado mediante o metodo da clase File axeitado
+   
+         4)crear o directorio 'subdir'  na ruta '/home/oracle/NetBeansProjects/arquivos/arquivosdir/' creada anteriormente
+	   crear o arquivo Products2.txt no directorio mencionado anteriormente (subdir) sempre e cando dito arquivo non exista. 
+
+	  comprobar que a ruta foi creada ou existe mediante o comandos do sistema operativo
+	  comprobar que o arquivo foi creado ou existe mediante comandos do sistema operativo
+
+ 	 5)amosar arquivos e subdirectorios do directorio creado '/home/oracle/NetBeansProjects/arquivos/arquivosdir/'
+	   utilizar para elo o metodo da clase File axeitado : debería verse o seguinte resultado:
+
+		Products1.txt
+		subdir
+
+	 6)utilizando  os metodos axeitados amosar a ruta que corresponde  ao primeiro  directorio creado:
+	   
+	 
+	 7)utilizando  os metodos axeitados amosar a seguinte informacion sobre o primeiro obxecto arquivo creado:
+	 nome
+	 ruta
+	 si e posible ou non escribir nel
+	 si e posible ou non ler del
+	 a sua lonxitude en bytes (para isto escribir no arquivo mediante calquerea editor de texto  ,  o texto 'ola')
+	
+	8) forzar a que o mesmo arquivo referido no apartado anterior   sexa de so lectura
+	comprobar dende o sistema operativo que no se pode escribir na da en dito arquivo
+
+	9)forzar a que o arquivo referido no apartado anterior pase de novo a ser de novo de  escritura
+	comprobar dendo o sistema operativo que se pode ler do arquivo
+
+        10)borrar o arquivo referido no apartado anterior
+	comprobar dende o sistema operativo que o arquivo foi borrado
+	
+	11)borrar os o resto de arquivos e directorios creados anteriormente 
+ */
+
