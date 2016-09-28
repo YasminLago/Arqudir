@@ -49,14 +49,14 @@ public class Arqudir {
             for(int x = 0;x<fich.length;x++)
                 System.out.println(fich[x].getName());
         }else{
-            System.out.println("O ficheiro esta valeiro");
+            System.out.println("El fichero esta vacio");
         }
         
         //Ejercicio 6
          System.out.println("Primer directorio creado: \n"+f.getAbsolutePath());
          
         //Ejercicio 7
-         System.out.println("Primer arquivo: \n Nome: "+f.getName()+"\n Ruta: "+f.getAbsolutePath());
+         System.out.println("Primer archivo: \n Nome: "+f.getName()+"\n Ruta: "+f.getAbsolutePath());
             if(f.canWrite()==true){
                 System.out.println("Se puede escribir");
             }else{
