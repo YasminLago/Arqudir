@@ -12,6 +12,7 @@ import java.io.IOException;
 public class Arqudir {
     public static void main(String[] args) throws IOException {
         
+        //Ejercicio 11 
         String vDirectorio2 = "/home/oracle/NetBeansProjects/arquivos/arquivosdir/subdir";
         
         //Ejercicio 5
@@ -19,29 +20,28 @@ public class Arqudir {
         
         //Ejercicio 2 y 4
         String arquivosdir = "/home/oracle/NetBeansProjects/arquivos/arquivosdir/Products1.txt";
+        String temporal = "/home/oracle/NetBeansProjects/arquivos/arquivosdir/Products1.txt~";
         String arquivo2 = "/home/oracle/NetBeansProjects/arquivos/arquivosdir/subdir/Products2.txt";
-        
-        BufferedWriter bw; 
-        BufferedWriter bw2;
              
         //Ejercicio 1 y 4
         boolean directorio = new File("/home/oracle/NetBeansProjects/arquivos/arquivosdir/").mkdirs();
         boolean directorio2 = new File("/home/oracle/NetBeansProjects/arquivos/arquivosdir/subdir").mkdirs();
         
         File f = new File(arquivosdir);
+        File f1 = new File(temporal);
         File f2 = new File(arquivo2);
         File f3 = new File(vDirectorio);
         File f4 = new File(vDirectorio2);
         
         if (f.exists()){
-            //System.out.println("Ya existe f");
+            System.out.println("Ya existe Products1.txt");
         }else{
-            bw = new BufferedWriter(new FileWriter(arquivosdir));
+            f.createNewFile();
         }
         if (f2.exists()){
-            //System.out.println("Ya existe f2");
+            System.out.println("Ya existe Products2.txt");
         }else{
-            bw2 = new BufferedWriter(new FileWriter(arquivo2));
+            f2.createNewFile();
         }      
         
         //Ejercicio 5
@@ -80,6 +80,8 @@ public class Arqudir {
         //Ejercicio 10
             f.delete();
             System.out.println("Arquivo borrado");
+            f1.delete();
+            System.out.println("Temporal borrado");
             
         //Ejercicio 11
             f2.delete();
